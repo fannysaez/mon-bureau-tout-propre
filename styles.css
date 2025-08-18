@@ -1,3 +1,58 @@
+/* --- ILLUSTRATION D'ATTENTE --- */
+.waiting-illustration {
+    background: var(--result-gradient);
+    border-radius: var(--border-radius);
+    color: #fff;
+    padding: 32px 28px 28px 28px;
+    min-height: 340px;
+    box-shadow: var(--result-shadow);
+    display: block;
+    animation: slideIn 0.5s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Accessibilité : éléments cachés et focus visible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+:focus-visible {
+    outline: 2px solid #00796b !important;
+    outline-offset: 2px;
+}
+
+/* --- BOUTON RESET --- */
+.reset-btn {
+    width: 100%;
+    padding: 13px;
+    background: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: var(--border-radius);
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.reset-btn:hover {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 150, 136, 0.10);
+}
+
 /* VARIABLES */
 :root {
     --main-bg: linear-gradient(120deg, #e0f7fa 0%, #e3fcec 100%);

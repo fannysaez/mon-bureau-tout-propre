@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Bureau Tout Propre - Simulateur de prix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description"
+        content="Simulateur de prix instantané pour prestations de nettoyage de bureaux. Obtenez votre devis personnalisé en quelques clics.">
+    <title>Mon Bureau Tout Propre - Simulateur de prix de nettoyage de bureaux</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧽</text></svg>">
+
 </head>
 
 <body>
@@ -28,29 +33,30 @@
                         </ul>
                     </div>
 
-                    <form id="priceForm" class="form-section">
+                    <form id="priceForm" class="form-section" role="form" aria-labelledby="formTitle">
+
                         <div class="form-group">
                             <label for="surface">Surface des bureaux (en m²) *</label>
-                            <input type="number" id="surface" name="surface" min="1" max="10000" required>
+                            <input type="number" id="surface" name="surface" min="1" max="10000" required
+                                aria-required="true" autocomplete="off">
                         </div>
 
                         <div class="form-group">
-                            <label>Fréquence de nettoyage *</label>
-                            <div class="frequency-options">
-                                <div class="frequency-option">
-                                    <input type="radio" id="freq1" name="frequency" value="1" required>
-                                    <label for="freq1">1 fois par semaine</label>
-                                </div>
-                                <div class="frequency-option">
-                                    <input type="radio" id="freq2" name="frequency" value="2" required>
-                                    <label for="freq2">2 fois par semaine</label>
-                                </div>
-                                <div class="frequency-option">
-                                    <input type="radio" id="freq5" name="frequency" value="5" required>
-                                    <label for="freq5">Tous les jours (5x/sem.)</label>
-                                </div>
+                            <span id="formTitle" class="sr-only">Fréquence de nettoyage *</span>
+                            <label for="freq1">Fréquence de nettoyage *</label>
+                            <div class="frequency-options" role="radiogroup" aria-labelledby="formTitle">
+                                <div class="frequency-option"><input type="radio" id="freq1" name="frequency" value="1"
+                                        required aria-labelledby="freq1Label"><label id="freq1Label" for="freq1">1
+                                        fois<br>par semaine</label></div>
+                                <div class="frequency-option"><input type="radio" id="freq2" name="frequency" value="2"
+                                        required aria-labelledby="freq2Label"><label id="freq2Label" for="freq2">2 fois
+                                        par semaine</label></div>
+                                <div class="frequency-option"><input type="radio" id="freq5" name="frequency" value="5"
+                                        required aria-labelledby="freq5Label"><label id="freq5Label" for="freq5">Tous
+                                        les jours (5x/sem.)</label></div>
                             </div>
                         </div>
+
 
                         <div class="form-group">
                             <div class="checkbox-group">
@@ -62,10 +68,32 @@
                         <button type="submit" class="calculate-btn">
                             💰 Calculer mon devis
                         </button>
+                        <button type="button" class="reset-btn" id="resetSimulator">
+                            ♻️ Réinitialiser
+                        </button>
                     </form>
                     <div id="error" class="error"></div>
                 </section>
                 <aside class="simulator-right">
+                    <div id="waiting-illustration" class="waiting-illustration">
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9f9.svg"
+                            alt="Icône d'éponge, illustration de nettoyage de bureau" width="120" height="120"
+                            style="margin: 32px auto 16px auto; display: block;" />
+                        <p style="text-align:center; color:#fff; font-size:1.1rem; margin-top:0;">Votre devis
+                            personnalisé s'affichera ici.<br>Remplissez le formulaire à gauche !</p>
+
+                        <div class="waiting-benefits" style="margin-top:32px;">
+                            <h4 style="color:#fff; text-align:center; margin-bottom:12px; font-size:1.08rem;">Pourquoi
+                                choisir <span style="color:#ffe082;">Mon Bureau Tout Propre</span> ?</h4>
+                            <ul
+                                style="color:#fff; font-size:1rem; list-style:disc inside; opacity:0.93; text-align:left; max-width:320px; margin:0 auto;">
+                                <li>Devis instantané et sans engagement</li>
+                                <li>Tarifs transparents, pas de surprise</li>
+                                <li>Équipe professionnelle et réactive</li>
+                                <li>Options personnalisées selon vos besoins</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div id="results" class="results">
                         <h3>📊 Votre devis personnalisé</h3>
                         <div class="price-breakdown">
