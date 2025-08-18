@@ -1,0 +1,340 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Contenu principal */
+.content {
+    padding: 40px 30px;
+}
+
+/* Section d'information */
+.info-section {
+    background: #e7f3ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid #667eea;
+}
+
+.info-section h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Formulaire */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Champs de saisie */
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Options de fréquence */
+.frequency-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.frequency-option {
+    position: relative;
+}
+
+.frequency-option input[type="radio"] {
+    display: none;
+}
+
+.frequency-option label {
+    display: block;
+    padding: 15px 20px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    margin: 0;
+}
+
+.frequency-option input[type="radio"]:checked + label {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Groupe checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 2px solid #e1e5e9;
+    transition: all 0.3s ease;
+}
+
+.checkbox-group:hover {
+    border-color: #667eea;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #667eea;
+}
+
+.checkbox-group label {
+    margin: 0;
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Bouton de calcul */
+.calculate-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.calculate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.calculate-btn:active {
+    transform: translateY(0);
+}
+
+/* Zone des résultats */
+.results {
+    margin-top: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 15px;
+    color: white;
+    display: none;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Détail des prix */
+.price-breakdown {
+    display: grid;
+    gap: 15px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.price-item:last-child {
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Messages d'erreur */
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: none;
+}
+
+/* Responsive Design */
+
+/* Tablettes */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .frequency-options {
+        grid-template-columns: 1fr;
+    }
+
+    .results {
+        padding: 20px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .info-section {
+        padding: 15px;
+    }
+
+    .calculate-btn {
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .results {
+        padding: 15px;
+    }
+
+    .results h3 {
+        font-size: 1.3rem;
+    }
+
+    .price-item {
+        font-size: 0.9rem;
+    }
+
+    .price-item:last-child {
+        font-size: 1.1rem;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 320px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .frequency-option label {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .checkbox-group {
+        padding: 12px 15px;
+    }
+}

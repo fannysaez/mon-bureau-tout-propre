@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Bureau Tout Propre - Simulateur de prix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🧽 Mon Bureau Tout Propre</h1>
+            <p>Simulateur de prix pour vos prestations de nettoyage</p>
+        </header>
+
+        <main class="content">
+            <div class="info-section">
+                <h4>Comment ça marche ?</h4>
+                <ul>
+                    <li>Indiquez la surface de vos bureaux en m²</li>
+                    <li>Choisissez la fréquence de nettoyage souhaitée</li>
+                    <li>Sélectionnez vos options (nettoyage des vitres)</li>
+                    <li>Obtenez instantanément votre devis personnalisé</li>
+                </ul>
+            </div>
+
+            <form id="priceForm" class="form-section">
+                <div class="form-group">
+                    <label for="surface">Surface des bureaux (en m²) *</label>
+                    <input type="number" id="surface" name="surface" min="1" max="10000" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Fréquence de nettoyage *</label>
+                    <div class="frequency-options">
+                        <div class="frequency-option">
+                            <input type="radio" id="freq1" name="frequency" value="1" required>
+                            <label for="freq1">1 fois par semaine</label>
+                        </div>
+                        <div class="frequency-option">
+                            <input type="radio" id="freq2" name="frequency" value="2" required>
+                            <label for="freq2">2 fois par semaine</label>
+                        </div>
+                        <div class="frequency-option">
+                            <input type="radio" id="freq5" name="frequency" value="5" required>
+                            <label for="freq5">Tous les jours (5x/sem.)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="windows" name="windows">
+                        <label for="windows">🪟 Nettoyage des vitres inclus (+10%)</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="calculate-btn">
+                    💰 Calculer mon devis
+                </button>
+            </form>
+
+            <div id="error" class="error"></div>
+
+            <div id="results" class="results">
+                <h3>📊 Votre devis personnalisé</h3>
+                <div class="price-breakdown">
+                    <div class="price-item">
+                        <span>Surface :</span>
+                        <span id="resultSurface">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Fréquence :</span>
+                        <span id="resultFrequency">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Tarif de base :</span>
+                        <span id="resultBasePrice">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Après fréquence :</span>
+                        <span id="resultFrequencyPrice">-</span>
+                    </div>
+                    <div class="price-item" id="windowsResult" style="display: none;">
+                        <span>Avec vitres (+10%) :</span>
+                        <span id="resultWithWindows">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Montant HT :</span>
+                        <span id="resultHT">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>TVA (20%) :</span>
+                        <span id="resultTVA">-</span>
+                    </div>
+                    <div class="price-item">
+                        <span>💳 Montant TTC :</span>
+                        <span id="resultTTC">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
