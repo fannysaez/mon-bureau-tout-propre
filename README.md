@@ -1,5 +1,27 @@
 # 🧹 Mon Bureau Tout Propre — Simulateur de prix
 
+---
+```bash
+mon-bureau-tout-propre/
+│
+├── index.html          # Page principale avec le simulateur
+├── styles.css          # Feuille de styles principale
+├── app.js              # Logique JavaScript du simulateur
+├── README.md           # Documentation du projet
+│
+├── assets/             # Ressources statiques (images, icônes, logos…)
+│   ├── img/
+│   │   └── logo.png
+│   └── icons/
+│       └── broom.svg
+│
+├── docs/               # Documentation ou captures d’écran du projet
+│   └── screenshot.png
+│
+└── .gitignore          # Fichiers/dossiers à ignorer par Git
+```
+---
+
 ## 📌 Contexte du projet
 L’entreprise fictive **Mon Bureau Tout Propre** propose des prestations de nettoyage de bureaux.  
 Elle souhaite mettre à disposition de ses clients un **simulateur de prix interactif** directement intégré à son site vitrine.  
@@ -80,3 +102,4 @@ Ce projet mobilise des compétences en **HTML**, **CSS** et **JavaScript vanilla
    ```bash
    git clone https://github.com/fannysaez/mon-bureau-tout-propre
    cd mon-bureau-tout-propre
+   ```
