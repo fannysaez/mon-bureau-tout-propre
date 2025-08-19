@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-   <img src="docs/Mon-bureau-tout-propre.png" alt="Aperçu du simulateur" width="600"/>
+   <img src="docs/Mon-bureau-tout-propre.webp" alt="Aperçu du simulateur" width="600"/>
 </p>
 
 ---
@@ -24,7 +24,7 @@ mon-bureau-tout-propre/
 │
 │
 ├── docs/               # Documentation ou captures d'écran du projet
-│   └── Mon-bureau-tout-propre.png
+│   └── Mon-bureau-tout-propre.webp
 │
 ```
 
@@ -56,7 +56,7 @@ Le cahier des charges complet du projet est disponible ici :
 
 Si tu veux aussi une capture d'écran du cahier des charges, ajoute-la ici :
 
-![Cahier des charges](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image.jpg)
+![Cahier des charges](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image.webp)
 
 ---
 
@@ -102,8 +102,8 @@ Ce projet mobilise des compétences en **HTML**, **CSS** et **JavaScript vanilla
 Voici deux exemples de devis générés par le simulateur :
 
 <p align="center">
-   <img src="docs/tests-devis/test-exemple-1.png" alt="Test exemple 1 - Devis personnalisé" width="400"/>
-   <img src="docs/tests-devis/test-exemple-2.png" alt="Test exemple 2 - Devis personnalisé" width="400"/>
+   <img src="docs/tests-devis/test-exemple-1.webp" alt="Test exemple 1 - Devis personnalisé" width="400"/>
+   <img src="docs/tests-devis/test-exemple-2.webp" alt="Test exemple 2 - Devis personnalisé" width="400"/>
 </p>
 
 ---
@@ -206,10 +206,28 @@ Voici deux exemples de devis générés par le simulateur :
 Voici un aperçu de l'interface sur différents supports :
 
 <p align="center">
-   <img src="assets/Desktop.png" alt="Aperçu Desktop" width="350"/>
-   <img src="assets/Tablette.png" alt="Aperçu Tablette" width="220"/>
-   <img src="assets/Mobile.png" alt="Aperçu Mobile" width="150"/>
+   <img src="assets/Desktop.webp" alt="Aperçu Desktop" width="350"/>
+   <img src="assets/Tablette.webp" alt="Aperçu Tablette" width="220"/>
+   <img src="assets/Mobile.webp" alt="Aperçu Mobile" width="150"/>
 </p>
+
+---
+
+## 📈 Résultats Lighthouse
+
+### Desktop
+
+<p align="center">
+   <img src="assets/Lighthouse/Desktop.webp" alt="Lighthouse Desktop" width="400"/>
+</p>
+
+### Mobile
+
+<p align="center">
+   <img src="assets/Lighthouse/Mobile.webp" alt="Lighthouse Mobile" width="220"/>
+</p>
+
+> **Tout est vert (Performance, Accessibilité, SEO) sauf la catégorie _Bonnes pratiques_ qui obtient un score d'environ 83/100 au lieu de 90+.**
 
 ---
 
