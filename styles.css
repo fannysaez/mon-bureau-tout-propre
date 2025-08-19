@@ -1,3 +1,20 @@
+/* Harmonisation boutons fréquence desktop */
+@media (min-width: 1024px) {
+    .frequency-option label {
+        min-width: 140px;
+        max-width: 160px;
+        height: 48px;
+        white-space: normal;
+        word-break: break-word;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.2;
+        padding: 8px 12px;
+    }
+}
+
 /* Illustration éponge centrée */
 .waiting-illustration-img {
     display: block;
