@@ -479,6 +479,26 @@ input[type="number"]:focus {
 }
 
 @media (max-width: 600px) {
+    .frequency-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .frequency-option {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .frequency-option label {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0;
+        white-space: nowrap;
+    }
+
     .container {
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(60, 60, 120, 0.10);
