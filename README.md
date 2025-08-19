@@ -27,6 +27,7 @@ mon-bureau-tout-propre/
 │   └── Mon-bureau-tout-propre.png
 │
 ```
+
 ---
 
 ## 📚 Table des matières
@@ -93,6 +94,17 @@ Ce projet mobilise des compétences en **HTML**, **CSS** et **JavaScript vanilla
    - Sélectionner une fréquence de nettoyage
    - Cocher/décocher l'option vitres
    - Vérifier les calculs automatiques
+
+---
+
+## 🖼️ Tests d'exemple (devis personnalisés)
+
+Voici deux exemples de devis générés par le simulateur :
+
+<p align="center">
+   <img src="docs/tests-devis/test-exemple-1.png" alt="Test exemple 1 - Devis personnalisé" width="400"/>
+   <img src="docs/tests-devis/test-exemple-2.png" alt="Test exemple 2 - Devis personnalisé" width="400"/>
+</p>
 
 ---
 
