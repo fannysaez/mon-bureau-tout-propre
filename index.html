@@ -71,6 +71,8 @@
                         <button type="button" class="reset-btn" id="resetSimulator">
                             ♻️ Réinitialiser
                         </button>
+
+                        <!-- L'encart est déplacé sous le bloc devis personnalisé -->
                     </form>
                     <div id="error" class="error"></div>
                 </section>
@@ -78,23 +80,26 @@
                     <div id="waiting-illustration" class="waiting-illustration">
                         <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9f9.svg"
                             alt="Icône d'éponge, illustration de nettoyage de bureau" width="120" height="120"
-                            style="margin: 32px auto 16px auto; display: block;" />
-                        <p style="text-align:center; color:#fff; font-size:1.1rem; margin-top:0;">Votre devis
+                            class="waiting-illustration-img" />
+                        <p style="text-align:center; font-size:1.1rem; margin-top:0;">Votre devis
                             personnalisé s'affichera ici.<br>Remplissez le formulaire à gauche !</p>
-
-                        <div class="waiting-benefits" style="margin-top:32px;">
-                            <h4 style="color:#fff; text-align:center; margin-bottom:12px; font-size:1.08rem;">Pourquoi
-                                choisir <span style="color:#ffe082;">Mon Bureau Tout Propre</span> ?</h4>
-                            <ul
-                                style="color:#fff; font-size:1rem; list-style:disc inside; opacity:0.93; text-align:left; max-width:320px; margin:0 auto;">
-                                <li>Devis instantané et sans engagement</li>
-                                <li>Tarifs transparents, pas de surprise</li>
-                                <li>Équipe professionnelle et réactive</li>
-                                <li>Options personnalisées selon vos besoins</li>
-                            </ul>
+                        <div class="waiting-extra">
+                            <strong>Besoin d'un conseil&nbsp;?</strong><br>
+                            <span style="opacity:0.93;">Notre équipe peut vous aider à choisir la fréquence idéale ou à
+                                estimer la surface à nettoyer.<br>N'hésitez pas à nous contacter pour un accompagnement
+                                personnalisé&nbsp;!</span>
+                        </div>
+                        <div id="tip-below-devis" class="form-tip">
+                            <h4>💡 Le saviez-vous&nbsp;?</h4>
+                            <p>Un entretien régulier de vos bureaux améliore le bien-être et la productivité de vos
+                                équipes.<br>
+                                <span style="color:var(--primary);font-weight:600;">Demandez votre devis en quelques
+                                    secondes&nbsp;!</span>
+                            </p>
                         </div>
                     </div>
                     <div id="results" class="results">
+
                         <h3>📊 Votre devis personnalisé</h3>
                         <div class="price-breakdown">
                             <div class="price-item">

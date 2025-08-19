@@ -70,6 +70,10 @@ class PriceCalculator {
         // Affiche l'illustration d'attente
         const waiting = document.getElementById('waiting-illustration');
         if (waiting) waiting.style.display = 'block';
+
+        // Affiche l'encart "Le saviez-vous ?" sous le bloc devis
+        const tipBelow = document.getElementById('tip-below-devis');
+        if (tipBelow) tipBelow.style.display = 'block';
     }
 
     /**
@@ -212,6 +216,10 @@ class PriceCalculator {
         // Masque l'illustration d'attente
         const waiting = document.getElementById('waiting-illustration');
         if (waiting) waiting.style.display = 'none';
+
+        // Masque l'encart "Le saviez-vous ?" sous le bloc devis
+        const tipBelow = document.getElementById('tip-below-devis');
+        if (tipBelow) tipBelow.style.display = 'none';
 
         // Scroll vers les résultats avec un léger délai pour l'animation
         setTimeout(() => {
