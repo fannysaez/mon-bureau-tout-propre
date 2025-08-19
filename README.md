@@ -201,6 +201,18 @@ Voici deux exemples de devis générés par le simulateur :
 
 ---
 
+## 🖼️ Interface
+
+Voici un aperçu de l'interface sur différents supports :
+
+<p align="center">
+   <img src="assets/Desktop.png" alt="Aperçu Desktop" width="350"/>
+   <img src="assets/Tablette.png" alt="Aperçu Tablette" width="220"/>
+   <img src="assets/Mobile.png" alt="Aperçu Mobile" width="150"/>
+</p>
+
+---
+
 ## 📊 Structure du code
 
 ### HTML (index.html)
