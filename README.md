@@ -56,9 +56,6 @@ Le cahier des charges complet du projet est disponible ici :
 Si tu veux aussi une capture d'écran du cahier des charges, ajoute-la ici :
 
 ![Cahier des charges](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image.jpg)
-![Cahier des charges page 1](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-1.jpg)
-![Cahier des charges page 2](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-2.jpg)
-![Cahier des charges page 3](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-3.jpg)
 
 ---
 
