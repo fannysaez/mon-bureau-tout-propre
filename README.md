@@ -1,4 +1,3 @@
-
 # 🧹 Mon Bureau Tout Propre — Simulateur de prix
 
 <p align="center">
@@ -11,8 +10,28 @@
    <img src="docs/Mon-bureau-tout-propre.png" alt="Aperçu du simulateur" width="600"/>
 </p>
 
+---
+
+## 📁 Structure de projet
+
+```bash
+mon-bureau-tout-propre/
+│
+├── index.html          # Page principale avec le simulateur
+├── styles.css          # Feuille de styles principale
+├── app.js              # Logique JavaScript du simulateur
+├── README.md           # Documentation du projet
+│
+│
+├── docs/               # Documentation ou captures d'écran du projet
+│   └── Mon-bureau-tout-propre.png
+│
+```
+---
+
 ## 📚 Table des matières
 
+- [Cahier des charges (PDF)](#cahier-des-charges)
 - [Contexte du projet](#-contexte-du-projet)
 - [Objectifs](#-objectifs)
 - [Fonctionnalités](#-fonctionnalités)
@@ -28,19 +47,18 @@
 
 ---
 
-```bash
-mon-bureau-tout-propre/
-│
-├── index.html          # Page principale avec le simulateur
-├── styles.css          # Feuille de styles principale
-├── app.js              # Logique JavaScript du simulateur
-├── README.md           # Documentation du projet
-│
-│
-├── docs/               # Documentation ou captures d'écran du projet
-│   └── Mon-bureau-tout-propre.png
-│
-```
+## 📄 Cahier des charges
+
+Le cahier des charges complet du projet est disponible ici :
+
+- [📥 Télécharger le cahier des charges (PDF)](docs/cdc-mon-bureau-tout-propre.pdf)
+
+Si tu veux aussi une capture d'écran du cahier des charges, ajoute-la ici :
+
+![Cahier des charges](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image.jpg)
+![Cahier des charges page 1](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-1.jpg)
+![Cahier des charges page 2](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-2.jpg)
+![Cahier des charges page 3](docs/cdc-mon-bureau-tout-propre-capture%20ecran/image-3.jpg)
 
 ---
 
@@ -56,6 +74,28 @@ L'objectif est de permettre aux utilisateurs d'estimer, en toute autonomie, le c
 - Option supplémentaire : nettoyage des vitres
 
 Ce projet mobilise des compétences en **HTML**, **CSS** et **JavaScript vanilla** afin de créer un outil simple, ergonomique et responsive.
+
+---
+
+## 🚀 Tester le projet
+
+1. Cloner le dépôt :
+
+   ```bash
+   git clone https://github.com/fannysaez/mon-bureau-tout-propre
+   cd mon-bureau-tout-propre
+   ```
+
+2. **Ouvrir le projet**
+
+   - Ouvrir `index.html` directement dans un navigateur, ou
+   - Utiliser Live Server dans VS Code pour un développement optimal
+
+3. **Tester le simulateur**
+   - Saisir une surface (ex: 100 m²)
+   - Sélectionner une fréquence de nettoyage
+   - Cocher/décocher l'option vitres
+   - Vérifier les calculs automatiques
 
 ---
 
@@ -116,93 +156,6 @@ Ce projet mobilise des compétences en **HTML**, **CSS** et **JavaScript vanilla
   - `README.md`
 
 - Une version en ligne via **GitHub Pages**.
-
----
-
-## 🚀 Tester le projet
-
-1. Cloner le dépôt :
-
-   ```bash
-   git clone https://github.com/fannysaez/mon-bureau-tout-propre
-   cd mon-bureau-tout-propre
-   ```
-
-2. **Ouvrir le projet**
-
-   - Ouvrir `index.html` directement dans un navigateur, ou
-   - Utiliser Live Server dans VS Code pour un développement optimal
-
-3. **Tester le simulateur**
-   - Saisir une surface (ex: 100 m²)
-   - Sélectionner une fréquence de nettoyage
-   - Cocher/décocher l'option vitres
-   - Vérifier les calculs automatiques
-
----
-
-## 🧪 Tests et validation
-
-### Tests fonctionnels à effectuer :
-
-1. **Validation des entrées**
-
-   - [ ] Surface négative rejetée
-   - [ ] Surface > 10000 m² limitée
-   - [ ] Fréquence obligatoire
-
-2. **Calculs de tarification**
-
-   - [ ] Exemple 1 : 80 m², 2x/semaine, avec vitres = 316,80€ TTC
-   - [ ] Exemple 2 : 150 m², 5x/semaine, sans vitres = 1350€ TTC
-
-3. **Responsive Design**
-
-   - [ ] Affichage correct sur desktop (> 768px)
-   - [ ] Affichage correct sur tablette (768px - 481px)
-   - [ ] Affichage correct sur mobile (< 480px)
-
-4. **Expérience utilisateur**
-   - [ ] Calcul en temps réel
-   - [ ] Messages d'erreur appropriés
-   - [ ] Navigation fluide
-   - [ ] Animations fonctionnelles
-
----
-
-## 📝 Exemples de calcul
-
-### Exemple 1
-
-- **Surface** : 80 m²
-- **Fréquence** : 2 fois par semaine
-- **Options** : Vitres incluses
-
-**Calcul détaillé :**
-
-1. Tarif de base : 80 × 1,50 = 120 €
-2. Fréquence : 120 × 2 = 240 €
-3. Options (vitres +10%) : 240 × 1,10 = 264 €
-4. **Résultat final :**
-   - Montant HT = 264 €
-   - TVA (20%) = 52,80 €
-   - **Montant TTC = 316,80 €**
-
-### Exemple 2
-
-- **Surface** : 150 m²
-- **Fréquence** : tous les jours (5 fois par semaine)
-- **Options** : pas de vitres
-
-**Calcul détaillé :**
-
-1. Tarif de base : 150 × 1,50 = 225 €
-2. Fréquence : 225 × 5 = 1125 €
-3. Options : Pas d'option → 1125 €
-4. **Résultat final :**
-   - Montant HT = 1125 €
-   - TVA (20%) = 225 €
-   - **Montant TTC = 1350 €**
 
 ---
 
